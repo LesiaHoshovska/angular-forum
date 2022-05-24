@@ -1,0 +1,6 @@
+.user-signup{
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  position: relative;
+}

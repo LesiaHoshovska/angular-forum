@@ -1,0 +1,7 @@
+.change-pass{
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  position: relative;
+  background-color: dimgrey;
+}

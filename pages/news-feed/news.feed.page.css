@@ -1,0 +1,32 @@
+.news-page{
+  display: flex;
+  justify-content: center;
+}
+
+.news-feed{
+  display: flex;
+  place-items: center ;
+  align-items: flex-start;
+  flex-direction: column
+}
+
+.card{
+  padding: 30px;
+  margin: 10px;
+}
+
+.addBtn{
+  position: fixed;
+}
+.page{
+  background-color: dimgrey;
+}
+.fixed{
+  display: flex;
+  flex-direction: row;
+}
+
+button{
+  height: 65px;
+  align-items: center;
+}

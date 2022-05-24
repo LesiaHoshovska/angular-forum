@@ -1,0 +1,23 @@
+<div class="page">
+  <div class="fixed">
+    <add-post-card-btn class="addBtn" ></add-post-card-btn>
+  </div>
+  <div class="news-page">
+    <subscription-drop-down-component ></subscription-drop-down-component>
+    <div class="news-feed" >
+<!--      <progress-spinner *ngIf="isLoading" class="card"></progress-spinner>-->
+      <post-card-for-news-feed  *ngFor="let post of postsList" [post]="post" class="card"></post-card-for-news-feed>
+    </div>
+    <tag-drop-down-component ></tag-drop-down-component>
+  </div>
+<!--  <mat-form-field appearance="fill">-->
+<!--    <mat-label>Posts per list</mat-label>-->
+<!--    <input matInput [(ngModel)]="limit" type="number">-->
+<!--  </mat-form-field>-->
+
+<!--  <mat-form-field appearance="fill">-->
+<!--    <mat-label>Page</mat-label>-->
+<!--    <input matInput [(ngModel)]="page" type="number">-->
+<!--  </mat-form-field>-->
+<!--  <button mat-button (click)="getPosts()">Get posts</button>-->
+</div>
