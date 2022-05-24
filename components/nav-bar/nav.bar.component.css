@@ -1,0 +1,12 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+button{
+  height: 40px;
+  width: 60px;
+}

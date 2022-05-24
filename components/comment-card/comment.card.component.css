@@ -1,0 +1,19 @@
+.comment-card{
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  background-color: grey;
+}
+
+button{
+  height: 20px;
+  width: 50px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+#comment{
+  visibility: hidden;
+  height: 2px;
+  width: 2px;
+}

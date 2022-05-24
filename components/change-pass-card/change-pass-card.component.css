@@ -1,0 +1,23 @@
+
+.example-card {
+  max-width: 500px;
+  min-width: 300px;
+}
+
+.example-full-width {
+  width: 100%;
+}
+button{
+  height: 40px;
+  margin-bottom:  10px;
+}
+
+.title{
+  justify-content: center;
+  display: flex;
+}
+.userMsg{
+  text-align: right;
+  margin: 5px;
+}
+

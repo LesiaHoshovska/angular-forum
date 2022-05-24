@@ -1,0 +1,24 @@
+<mat-card class="example-card">
+  <div class="title">
+    <h2>Edit your post</h2>
+  </div>
+  <div>
+    <h3>Change your post</h3>
+  </div>
+  <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label for="post.title">Post title</mat-label>
+      <input [(ngModel)]="post.title" name="title" matInput placeholder="Ex. Pizza" value="title">
+    </mat-form-field>
+  </form>
+  <div>
+    <h3>Change here your thoughts</h3>
+  </div>
+  <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label for="post.body">Your post text</mat-label>
+      <textarea [(ngModel)]="post.body" name="body" matInput placeholder="Ex. It makes me feel..."></textarea>
+    </mat-form-field>
+  </form>
+  <button   class="example-full-width" (click)="updatePost()">Submit</button>
+</mat-card>

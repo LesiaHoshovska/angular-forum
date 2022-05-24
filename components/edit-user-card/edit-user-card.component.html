@@ -1,0 +1,23 @@
+<mat-card class="example-card">
+  <div class="title">
+    <h2>{{title}}</h2>
+  </div>
+  <div>
+    <h3>{{userName}}</h3>
+  </div>
+  <form class="example-form" [formGroup]="editUserData"  (ngSubmit)="updateUser()" >
+    <mat-form-field appearance="fill" class="example-full-width">
+      <mat-label>Enter your name</mat-label>
+      <input matInput placeholder="Your name" formControlName="name" required>
+    </mat-form-field>
+
+    <div>
+      <h3>{{emailTitle}}</h3>
+    </div>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Enter your email</mat-label>
+      <input matInput placeholder="pat@example.com"  formControlName="email" required>
+    </mat-form-field>
+    <button class="example-full-width">{{btnTitle}}</button>
+  </form>
+</mat-card>

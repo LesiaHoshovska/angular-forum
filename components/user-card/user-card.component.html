@@ -1,0 +1,13 @@
+<mat-card class="example-card">
+  <mat-card-title-group>
+    <mat-card-title>Some text</mat-card-title>
+    <img mat-card-lg-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+  </mat-card-title-group>
+  <mat-card-content>
+   Email:
+  </mat-card-content>
+  <mat-card-actions>
+    <button routerLink="/change-password/{{user.id}}" mat-button>Change password</button>
+    <button routerLink="/edit-user/{{user.id}}" mat-button>Edit your info</button>
+  </mat-card-actions>
+</mat-card>

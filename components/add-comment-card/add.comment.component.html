@@ -1,0 +1,10 @@
+<mat-card class="example-card">
+  <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label for="comment.body">Your comment text</mat-label>
+      <textarea [(ngModel)]="comment.body" name="body" matInput placeholder="Ex. It makes me feel..."></textarea>
+    </mat-form-field>
+  </form>
+  <button (click)="addComment()"  class="example-full-width">Add comment</button>
+</mat-card>
+

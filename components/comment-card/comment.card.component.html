@@ -1,0 +1,17 @@
+<mat-card-content *ngFor="let comment of comments" class="comment-card">
+  <span>user</span>
+  <p *ngIf="comment!==editComment; else editInput" class="body">
+    {{comment.body}}
+  </p>
+  <ng-template #editInput>
+    <input type="text" class="name" [(ngModel)]="editComment.body"  (blur)="edit(comment)" (keydown.enter)="edit(comment)"/>
+  </ng-template>
+  <button *ngIf="comment!==editComment" type="button" class="edit" title="edit hero"
+          (click)="editComment = comment">
+    Edit
+  </button>
+  <div>
+    <button (click)="deleteComment(comment)">Delete</button>
+  </div>
+</mat-card-content>
+
